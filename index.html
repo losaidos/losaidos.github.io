@@ -1,57 +1,233 @@
+
 <!DOCTYPE html>
-<html class="full" lang="en">
+
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta charset="utf-8">
 
-    <title>Losaidos</title>
+	<title>Losaidos</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<meta name="description" content="Losaidos is a Maine based web and graphic design company, providing high quality multimedia design services." />
 
-    <!-- Custom CSS -->
-    <link href="http://blueherondigital.com/css/base.css" rel="stylesheet">
-    <style>
-		body {
-			margin-top: 50px; 
-		}
-		.full {
-			background: url('http://blueherondigital.com/img/bg.jpg') no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			background-size: cover;
-			-o-background-size: cover;
-		}
-    </style>
+	<meta name="author" content="Mike Jandreau">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300' rel='stylesheet' type='text/css'>
+
+	<style>
+html, body, div, span, p, img {
+
+	margin: 0;
+
+	padding: 0;
+
+	border: 0;
+
+	font-size: 100%;
+
+	font: inherit;
+
+	vertical-align: baseline;
+
+	-moz-box-sizing: border-box;
+
+	-webkit-box-sizing: border-box;
+
+	box-sizing: border-box; }
+
+
+
+body {
+
+	background: #f5f0e9;
+
+	line-height: 1;
+
+	background-image: url('img/bg.jpg');
+
+	color: #3578d6;
+
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+
+	-webkit-text-size-adjust: 100%;
+
+ }
+
+
+
+body::after {
+
+	content: "";
+
+	background-image:url(../img/bg.jpg);
+
+	-webkit-background-size: cover;
+
+	-moz-background-size: cover;
+
+	-o-background-size: cover;
+
+	background-size: cover;	
+
+	background-repeat: no-repeat;
+
+	background-attachment: fixed;
+
+	background-position: top center; 
+
+	opacity: 0.2;
+
+	top: 0;
+
+	left: 0;
+
+	bottom: 0;
+
+	right: 0;
+
+	position: absolute;
+
+	z-index: -1;   
+
+}
+
+
+
+h1, p {
+
+	font-family: 'Titillium Web', sans-serif;
+
+	margin-bottom: 1em;
+	line-height: 1.5em;
+
+}
+
+
+
+
+
+.title { 
+
+	margin: 60px auto 25px;
+
+	width: 80%;
+
+	text-align: center;
+
+}
+
+
+
+
+
+.container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+
+.container .column,
+
+.container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+
+.container .sixteen.columns                 { width: 940px; }
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .container                                  { width: 768px; }
+
+    .container .column,
+
+    .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+
+    .container .sixteen.columns                 { width: 748px; }
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+	.title { 
+
+		padding: 0 50px 25px;
+
+		margin: 180px auto 25px;
+
+	}
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .container { width: 300px; }
+
+    .container .columns,
+
+    .container .column { margin: 0; }
+
+
+
+    .container .sixteen.columns  { width: 300px; }
+
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .container { width: 420px; }
+
+    .container .columns,
+
+    .container .column { margin: 0; }
+
+
+
+    .container .sixteen.columns { width: 420px; }
+
+}
+
+
+
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+
+
+	</style>
+
+
+
+	<!--[if lt IE 9]>
+
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+	<![endif]-->
+
+
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">Losaidos</a>
-            </div>
-        </div>
-    </nav>
+	<div class="container">
 
-    <!-- Put your page content here! -->
+		<div class="sixteen columns">
+
+
+
 			<div class="title">
 
-				<h1 class="remove-bottom">Losaidos</h1>
+				<h1 class="remove-bottom">Blue Heron Digital</h1>
 				<p>Hi there! My name is Mike Jandreau, and I make art, music, and websites.</p>
 
 				<p>I currently have a lot of irons in the fire, so the launch on the new portfolio is TBD.</p>
@@ -60,9 +236,11 @@
 
 			</div>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+		</div>
+
+	</div><!-- container -->
 
 </body>
 
